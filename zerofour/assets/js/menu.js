@@ -29,7 +29,7 @@ document.write("                </li>");
 document.write("												-->");
 document.write("                <li><a href='quienes-somos.html'>Quienes somos</a></li>");
 document.write("                <li><a href='right-sidebar.html'>Nuestros Clientes</a></li>");
-document.write("                <li><a href='no-sidebar.html'>Equipos</a></li>");
+document.write("                <li><a href='equipo.html'>Equipos</a></li>");
 document.write("                <li><a href='contactanos.html'>Contactanos</a></li>");
 document.write("            </ul>");
 document.write("        </nav>");
