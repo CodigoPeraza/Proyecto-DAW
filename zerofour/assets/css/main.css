@@ -2430,3 +2430,33 @@ input, select, textarea {
 	.justify-text {
 		text-align: justify;
 	}
+	/*De aqui en adelante Equipo*/
+	.team-member {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	
+	.info {
+		flex: 1;
+		margin-right: 20px;
+	}
+	
+	.photo {
+		flex: 1;
+		text-align: center;
+	}
+	
+	.photo img {
+		max-height: 250px;
+		width: auto;
+		border-radius: 50%;
+		transition: transform 0.3s ease-in-out;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Agregar transición */
+	}
+	
+	.photo img:hover {
+		transform: scale(1.1);
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Aumentar la intensidad de la sombra */
+	}
+	
