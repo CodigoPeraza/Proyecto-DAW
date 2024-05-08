@@ -2479,6 +2479,47 @@ input, select, textarea {
 	.centered-image {
         display: block;
         margin: 0 auto;
+		max-width: 100%; /* Cambiar el ancho máximo a 100% para que se ajuste al contenedor */
+		height: auto; /* Altura automática para mantener la proporción */
         border-radius: 10px; /* Ajusta el radio de los bordes según tus preferencias */
         margin-bottom: 20px; /* Agrega un margen inferior de 20px*/
     }
+
+	.testimonials-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px; /* Espacio entre los testimonios */
+	}
+	
+	.testimonial {
+		background-color: #f9f9f9; /* Color de fondo de cada testimonio */
+		padding: 20px; /* Espacio alrededor de cada testimonio */
+		border-radius: 10px; /* Bordes redondeados */
+		margin-bottom: 20px; /* Margen inferior del contenedor del testimonio */
+	}
+
+	.testimonial img {
+		display: block; /* Hace que la imagen se comporte como un bloque */
+		margin: auto; /* Establece márgenes automáticos para centrar la imagen horizontalmente */
+	}
+	
+	.client-img {
+		width: 250px; /* Ancho deseado */
+		height: auto; /* Altura automática para mantener la proporción */
+		border-radius: 50%; /* Hace que la imagen sea redonda */
+		transition: transform 0.3s ease; /* Agrega una transición suave */
+	}
+	
+	.client-img:hover {
+		transform: scale(1.1); /* Hace que la imagen aumente ligeramente de tamaño al pasar el cursor */
+	}
+	
+	/* Estilos para pantallas más pequeñas, como dispositivos móviles */
+	@media screen and (max-width: 768px) {
+			.testimonials-container {
+			grid-template-columns: 1fr; /* Cambiar a una sola columna */
+			}
+			.centered-image {
+				max-width: 80%; /* Cambiar el ancho máximo a un valor menor para pantallas más pequeñas */
+			}
+	}
