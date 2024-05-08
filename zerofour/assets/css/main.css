@@ -2523,3 +2523,80 @@ input, select, textarea {
 				max-width: 80%; /* Cambiar el ancho máximo a un valor menor para pantallas más pequeñas */
 			}
 	}
+
+	
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Alinea los elementos al centro */
+    padding: 20px 0; /* Agrega un espacio alrededor de los elementos del pie de página */
+    background-color: #f8f9fa; /* Color de fondo */
+}
+
+footer .contenedor {
+    display: inline-block; /* Para que los elementos en el pie de página estén en línea */
+}
+
+footer .contenedor a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 25px;
+    color: black;
+    transition: all 0.3s ease;
+
+
+/* Estilos comunes para los iconos */
+i {
+    text-align: center;
+    font-size: 55px;
+    color: black;
+    margin: 20%;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .35);
+    transition: .3s ease;
+}
+
+.fa-twitter:hover {
+    background-color: #1DA1F2;
+    color: white;
+    box-shadow: 0 0 15px #1DA1F2,
+                0 0 45px #1DA1F2,
+                0 0 75px #1DA1F2,
+                0 0 115px #1DA1F2;
+}
+
+.fa-youtube:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 15px red,
+                0 0 45px red,
+                0 0 75px red,
+                0 0 115px red;
+}
+
+.fa-instagram:hover {
+    background-color: #FF3E00;
+    color: white;
+    box-shadow: 0 0 15px #FF3E00,
+                0 0 45px #FF3E00,
+                0 0 75px #FF3E00,
+                0 0 115px #FF3E00; 
+}
+
+.fa-facebook:hover {
+    background-color: blue;
+    color: white;
+    box-shadow: 0 0 15px blue,
+                0 0 45px blue,
+                0 0 75px blue,
+                0 0 115px blue;
+}
+
+.fa-whatsapp:hover {
+    background-color: green;
+    color: white;
+    box-shadow: 0 0 15px green,
+                0 0 45px green,
+                0 0 75px green,
+                0 0 115px green;
+}
