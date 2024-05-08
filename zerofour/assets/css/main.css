@@ -2479,6 +2479,8 @@ input, select, textarea {
 	.centered-image {
         display: block;
         margin: 0 auto;
+		max-width: 100%; /* Cambiar el ancho máximo a 100% para que se ajuste al contenedor */
+		height: auto; /* Altura automática para mantener la proporción */
         border-radius: 10px; /* Ajusta el radio de los bordes según tus preferencias */
         margin-bottom: 20px; /* Agrega un margen inferior de 20px*/
     }
@@ -2512,3 +2514,12 @@ input, select, textarea {
 		transform: scale(1.1); /* Hace que la imagen aumente ligeramente de tamaño al pasar el cursor */
 	}
 	
+	/* Estilos para pantallas más pequeñas, como dispositivos móviles */
+	@media screen and (max-width: 768px) {
+			.testimonials-container {
+			grid-template-columns: 1fr; /* Cambiar a una sola columna */
+			}
+			.centered-image {
+				max-width: 80%; /* Cambiar el ancho máximo a un valor menor para pantallas más pequeñas */
+			}
+	}
