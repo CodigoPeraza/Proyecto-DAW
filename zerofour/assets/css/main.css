@@ -2526,17 +2526,17 @@ input, select, textarea {
 
 	
 /* Estilos para el pie de página */
-footer {
+.pie {
     text-align: center; /* Alinea los elementos al centro */
     padding: 20px 0; /* Agrega un espacio alrededor de los elementos del pie de página */
     background-color: #f8f9fa; /* Color de fondo */
 }
 
-footer .contenedor {
+.pie .contenedor1 {
     display: inline-block; /* Para que los elementos en el pie de página estén en línea */
 }
 
-footer .contenedor a {
+.pie .contenedor1 a {
     display: inline-block;
     margin: 0 10px;
     font-size: 25px;
