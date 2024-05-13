@@ -2516,12 +2516,25 @@ input, select, textarea {
 	
 	/* Estilos para pantallas más pequeñas, como dispositivos móviles */
 	@media screen and (max-width: 768px) {
-			.testimonials-container {
-			grid-template-columns: 1fr; /* Cambiar a una sola columna */
-			}
-			.centered-image {
-				max-width: 80%; /* Cambiar el ancho máximo a un valor menor para pantallas más pequeñas */
-			}
+		.team-member {
+			flex-direction: column; /* Cambia la dirección de la flexión para apilar elementos verticalmente */
+		}
+	
+		.info {
+			order: 1; /* Cambia el orden de visualización del elemento info */
+		}
+	
+		.photo {
+			order: 2; /* Cambia el orden de visualización del elemento photo */
+		}
+		.testimonials-container {
+			display: flex;
+			flex-direction: column; /* Cambia la dirección de flexión para apilar los testimonios verticalmente */
+		}
+		
+		.testimonial {
+			margin-bottom: 20px; /* Agrega un margen inferior para separar los testimonios */
+		}
 	}
 
 	
@@ -2542,7 +2555,7 @@ input, select, textarea {
     font-size: 25px;
     color: black;
     transition: all 0.3s ease;
-
+}
 
 /* Estilos comunes para los iconos */
 i {
